@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Explore View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ExploreViewController" id="Y6W-OH-hqX" customClass="ExploreViewController" customModule="StorEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExploreBGPattern" translatesAutoresizingMaskIntoConstraints="NO" id="7rW-AA-zvT">
+                                <rect key="frame" x="0.0" y="138.66666666666669" width="393" height="579.33333333333326"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExploreLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Jr3-bS-7iy">
+                                <rect key="frame" x="53" y="383.33333333333331" width="287" height="85.333333333333314"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swm-au-xwJ">
+                                <rect key="frame" x="16" y="748" width="361" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Explore Us"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Explore Us" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exploreButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ifs-ac-Js9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7rW-AA-zvT" secondAttribute="trailing" id="2nn-33-rA1"/>
+                            <constraint firstItem="7rW-AA-zvT" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.68" id="E9N-ig-lFT"/>
+                            <constraint firstItem="7rW-AA-zvT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GPr-bY-dcU"/>
+                            <constraint firstItem="Swm-au-xwJ" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="GYh-Wr-BM2"/>
+                            <constraint firstItem="Jr3-bS-7iy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ODM-gv-tLv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Swm-au-xwJ" secondAttribute="trailing" constant="16" id="PML-zn-y0E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7rW-AA-zvT" secondAttribute="bottom" constant="100" id="QHW-ME-WHu"/>
+                            <constraint firstItem="Jr3-bS-7iy" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.1" id="R6R-aQ-Asr"/>
+                            <constraint firstItem="Swm-au-xwJ" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.082" id="WM3-dB-6LP"/>
+                            <constraint firstItem="Jr3-bS-7iy" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ahd-25-iy8"/>
+                            <constraint firstItem="Swm-au-xwJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="de0-U3-7DB"/>
+                            <constraint firstItem="Jr3-bS-7iy" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.73" id="rJT-gz-7te"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exploreButton" destination="Swm-au-xwJ" id="pBM-2p-L87"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ExploreBGPattern" width="387" height="586"/>
+        <image name="ExploreLogo" width="287" height="76"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

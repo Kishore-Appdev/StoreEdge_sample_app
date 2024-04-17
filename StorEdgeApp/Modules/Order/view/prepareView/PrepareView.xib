@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PrepareView" customModule="StorEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJe-ia-6hN">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FOZ-1A-3Vr">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <color key="backgroundColor" name="backgroundcolor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstItem="FOZ-1A-3Vr" firstAttribute="top" secondItem="aJe-ia-6hN" secondAttribute="top" id="abq-B1-z3f"/>
+                        <constraint firstAttribute="trailing" secondItem="FOZ-1A-3Vr" secondAttribute="trailing" id="hFE-Qw-7Dt"/>
+                        <constraint firstItem="FOZ-1A-3Vr" firstAttribute="leading" secondItem="aJe-ia-6hN" secondAttribute="leading" id="igk-uo-78s"/>
+                        <constraint firstAttribute="bottom" secondItem="FOZ-1A-3Vr" secondAttribute="bottom" id="vrh-ed-9Pb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="aJe-ia-6hN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8Yu-tn-1MF"/>
+                <constraint firstItem="aJe-ia-6hN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Gkg-u1-ETz"/>
+                <constraint firstItem="aJe-ia-6hN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ilm-Yj-ZLY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aJe-ia-6hN" secondAttribute="bottom" id="PPR-6a-lic"/>
+                <constraint firstItem="aJe-ia-6hN" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ql1-hP-MzZ"/>
+                <constraint firstItem="aJe-ia-6hN" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="WhY-aD-npt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aJe-ia-6hN" secondAttribute="trailing" id="qEh-Tx-QHZ"/>
+                <constraint firstItem="aJe-ia-6hN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yq0-V9-vvH"/>
+            </constraints>
+            <connections>
+                <outlet property="prepareTableView" destination="FOZ-1A-3Vr" id="O6F-f3-gW9"/>
+            </connections>
+            <point key="canvasLocation" x="118" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="backgroundcolor">
+            <color red="1" green="0.95294117647058818" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

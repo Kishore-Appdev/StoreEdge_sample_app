@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Help View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HelpViewController" id="Y6W-OH-hqX" customClass="HelpViewController" customModule="StorEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="underline" translatesAutoresizingMaskIntoConstraints="NO" id="DwL-7z-803">
+                                <rect key="frame" x="23" y="436.66666666666669" width="353.66666666666669" height="2.6666666666666856"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="bottom" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6n-9S-nVa">
+                                <rect key="frame" x="3" y="404.66666666666669" width="393" height="42.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="support@storeedge.com">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="helpButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kYR-nH-EkJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="backgroundcolor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DwL-7z-803" secondAttribute="trailing" constant="0.33333333333331439" id="FHL-lq-j3K"/>
+                            <constraint firstItem="DwL-7z-803" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.00312989" id="Ibg-NM-htI"/>
+                            <constraint firstItem="DwL-7z-803" firstAttribute="top" secondItem="E6n-9S-nVa" secondAttribute="bottom" constant="-10.666666666666686" id="R4j-Uf-bwO"/>
+                            <constraint firstItem="E6n-9S-nVa" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.05" id="SGR-OT-SvV"/>
+                            <constraint firstItem="E6n-9S-nVa" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Un1-ew-dp4"/>
+                            <constraint firstItem="DwL-7z-803" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="Xsz-9d-yO9"/>
+                            <constraint firstItem="E6n-9S-nVa" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="3" id="ZxO-k1-fQt"/>
+                            <constraint firstItem="E6n-9S-nVa" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="fHR-Hj-k49"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helpButtton" destination="E6n-9S-nVa" id="J55-o2-IJo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="underline" width="238.33332824707031" height="2.6666667461395264"/>
+        <namedColor name="backgroundcolor">
+            <color red="1" green="0.95294117647058818" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

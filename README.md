@@ -1,1 +1,1 @@
-# StoreEdge_sample_app
+# StoreEdge
